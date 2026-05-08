@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Access | IPShield Research</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#14213D', light: '#1f3560', dark: '#0a1120' },
+                        secondary: { DEFAULT: '#FCA311', light: '#fdbd50', dark: '#d68704' },
+                        dark: { bg: '#0f172a', card: '#1e293b', border: '#334155' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-dark-bg dark:text-gray-200 transition-colors duration-300 font-sans antialiased min-h-screen flex p-4 md:p-12 relative overflow-x-hidden">
+
+    <!-- Background Elements -->
+    <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+    <div class="fixed top-0 right-0 w-1/2 h-full bg-gradient-to-l from-secondary/10 to-transparent blur-3xl -z-10"></div>
+    <div class="fixed -bottom-32 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-[120px] mix-blend-screen -z-10"></div>
+
+    <!-- Toggles (Top Right) -->
+    <div class="fixed top-6 right-6 flex items-center gap-2 bg-white/50 dark:bg-dark-card/50 backdrop-blur-md px-4 py-2 rounded-full border border-gray-200 dark:border-white/10 z-20 shadow-sm">
+        <button id="theme-toggle" class="p-2 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-secondary transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-white/10" aria-label="Toggle Theme">
+            <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
+            <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
+        </button>
+        <div class="w-px h-4 bg-gray-300 dark:bg-gray-600"></div>
+        <button id="rtl-toggle" class="text-xs font-bold text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-secondary px-2">RTL</button>
+        <div class="w-px h-4 bg-gray-300 dark:bg-gray-600"></div>
+        <a href="index.html" class="p-2 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-secondary transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-white/10" aria-label="Home">
+            <i data-lucide="home" class="w-4 h-4"></i>
+        </a>
+    </div>
+
+    <!-- Auth Card -->
+    <div class="w-full max-w-lg mx-auto my-auto relative z-10 animate-on-scroll scale-up is-visible">
+        <div class="bg-white dark:bg-dark-card rounded-3xl p-8 md:p-10 shadow-2xl border border-gray-100 dark:border-white/10 relative overflow-hidden">
+            <!-- Top Accent line -->
+            <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-secondary to-primary"></div>
+
+            <!-- Logo -->
+            <div class="flex justify-center mb-8">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-primary-light dark:from-secondary dark:to-secondary-dark rounded-xl flex items-center justify-center text-white dark:text-primary font-bold shadow-lg shadow-primary/20 dark:shadow-secondary/20">
+                        <i data-lucide="scale" class="w-6 h-6"></i>
+                    </div>
+                    <span class="font-heading font-bold text-3xl text-primary dark:text-white tracking-tight">IP<span class="text-secondary">Shield</span></span>
+                </a>
+            </div>
+
+            <div class="text-center mb-8">
+                <h1 class="text-2xl font-bold font-heading text-gray-900 dark:text-white mb-2">Request Access</h1>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">Register your law firm or corporate legal team</p>
+            </div>
+
+            <!-- Form -->
+            <form action="dashboard.html" method="GET" class="space-y-5">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">First Name</label>
+                        <div class="relative">
+                            <i data-lucide="user" class="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                            <input type="text" placeholder="James" class="w-full pl-10 pr-4 py-3 bg-gray-50 dark:bg-dark-bg border border-gray-200 dark:border-white/10 rounded-xl text-sm focus:bg-white dark:focus:bg-dark-card focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all text-gray-800 dark:text-white" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Last Name</label>
+                        <div class="relative">
+                            <input type="text" placeholder="Harrison" class="w-full px-4 py-3 bg-gray-50 dark:bg-dark-bg border border-gray-200 dark:border-white/10 rounded-xl text-sm focus:bg-white dark:focus:bg-dark-card focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all text-gray-800 dark:text-white" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Organization / Firm</label>
+                    <div class="relative">
+                        <i data-lucide="building-2" class="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" placeholder="Harrison IP Law" class="w-full pl-10 pr-4 py-3 bg-gray-50 dark:bg-dark-bg border border-gray-200 dark:border-white/10 rounded-xl text-sm focus:bg-white dark:focus:bg-dark-card focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all text-gray-800 dark:text-white" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Work Email</label>
+                    <div class="relative">
+                        <i data-lucide="mail" class="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <input type="email" placeholder="name@lawfirm.com" class="w-full pl-10 pr-4 py-3 bg-gray-50 dark:bg-dark-bg border border-gray-200 dark:border-white/10 rounded-xl text-sm focus:bg-white dark:focus:bg-dark-card focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all text-gray-800 dark:text-white" required>
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Create Password</label>
+                    <div class="relative">
+                        <i data-lucide="lock" class="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <input type="password" id="password" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" class="w-full pl-10 pr-10 py-3 bg-gray-50 dark:bg-dark-bg border border-gray-200 dark:border-white/10 rounded-xl text-sm focus:bg-white dark:focus:bg-dark-card focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all text-gray-800 dark:text-white" required>
+                        <button type="button" onclick="togglePassword()" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-primary dark:hover:text-secondary focus:outline-none">
+                            <i data-lucide="eye" id="eye-icon" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-2 pt-2">
+                    <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-gray-300 text-secondary focus:ring-secondary dark:border-gray-600 dark:bg-dark-bg" required>
+                    <span class="text-xs text-gray-600 dark:text-gray-400 leading-tight">
+                        I agree to the <a href="#" class="text-primary dark:text-secondary hover:underline">Terms of Service</a>, <a href="#" class="text-primary dark:text-secondary hover:underline">Privacy Policy</a>, and consent to NDA conditions.
+                    </span>
+                </div>
+
+                <button type="submit" class="w-full bg-secondary hover:bg-secondary-light text-primary font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-secondary/20 text-sm flex items-center justify-center gap-2 mt-4 hover:-translate-y-0.5">
+                    Submit Access Request <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+            </form>
+
+            <div class="mt-8 text-center text-sm text-gray-600 dark:text-gray-400">
+                Already registered? <a href="login.html" class="text-primary dark:text-secondary font-bold hover:underline">Sign In</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Init JS & Password Toggle -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        function togglePassword() {
+            const input = document.getElementById('password');
+            const icon = document.getElementById('eye-icon');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.setAttribute('data-lucide', 'eye-off');
+            } else {
+                input.type = 'password';
+                icon.setAttribute('data-lucide', 'eye');
+            }
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>
+
+

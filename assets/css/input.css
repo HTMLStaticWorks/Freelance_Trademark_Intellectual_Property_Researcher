@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800 bg-gray-50 transition-colors duration-300;
+  }
+  
+  .dark body {
+    @apply text-gray-200 bg-dark-bg;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-primary dark:text-white;
+  }
+
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl font-bold; }
+  h2 { @apply text-3xl md:text-4xl font-bold; }
+  h3 { @apply text-2xl md:text-3xl font-semibold; }
+}
+
+@layer components {
+  .container-custom {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primary-light transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-secondary hover:bg-secondary-light transition-all duration-300;
+  }
+  
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-base font-medium rounded-md text-primary hover:bg-primary hover:text-white transition-all duration-300 dark:border-gray-400 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:border-gray-500;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-dark-card rounded-xl shadow-lg border border-gray-100 dark:border-dark-border overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .nav-link {
+    @apply text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-secondary transition-colors font-medium text-sm lg:text-base;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+}
+
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+  .rtl-flip {
+    transform: scaleX(-1);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-light dark:bg-gray-600 rounded-full;
+}
+
+/* Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Trademark & IP Research | Compliance-Focused Analysis</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta name="description" content="Premium trademark search and IP research platform for law firms, corporate legal teams, and brand protection agencies.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#14213D', light: '#1f3560', dark: '#0a1120' },
+                        secondary: { DEFAULT: '#FCA311', light: '#fdbd50', dark: '#d68704' },
+                        dark: { bg: '#0f172a', card: '#1e293b', border: '#334155' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out 3s infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-dark-bg dark:text-gray-200 transition-colors duration-300 font-sans antialiased">
+
+    <!-- Header Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/80 dark:bg-dark-bg/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-primary-light dark:from-secondary dark:to-secondary-dark rounded-xl flex items-center justify-center text-white dark:text-primary font-bold shadow-lg shadow-primary/20 dark:shadow-secondary/20 group-hover:scale-105 transition-transform duration-300">
+                        <i data-lucide="scale" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-heading font-bold text-2xl text-primary dark:text-white tracking-tight">IP<span class="text-secondary">Shield</span></span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex space-x-1 xl:space-x-2 items-center bg-gray-100/50 dark:bg-white/5 px-2 py-1.5 rounded-full border border-gray-200/50 dark:border-white/5">
+                                        <div class="relative group">
+                        <button class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-secondary font-medium px-4 py-2 rounded-full transition-all text-sm hover:bg-white dark:hover:bg-white/10 flex items-center gap-1 cursor-pointer">
+                            Home <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-dark-card border border-gray-100 dark:border-white/10 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+                            <a href="index.html" class="block px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-primary dark:hover:text-secondary border-b border-gray-100 dark:border-white/5 rounded-t-xl">Corporate Home</a>
+                            <a href="home2.html" class="block px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-primary dark:hover:text-secondary rounded-b-xl">Cinematic Home</a>
+                        </div>
+                    </div>
+                    <a href="services.html" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-secondary font-medium px-4 py-2 rounded-full transition-all text-sm hover:bg-white dark:hover:bg-white/10">Services</a>
+                    <a href="search-methodology.html" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-secondary font-medium px-4 py-2 rounded-full transition-all text-sm hover:bg-white dark:hover:bg-white/10">Methodology</a>
+                    <a href="contact.html" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-secondary font-medium px-4 py-2 rounded-full transition-all text-sm hover:bg-white dark:hover:bg-white/10">Contact</a>
+                    <a href="reports.html" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-secondary font-medium px-4 py-2 rounded-full transition-all text-sm hover:bg-white dark:hover:bg-white/10">Reports</a>
+                    <a href="pricing.html" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-secondary font-medium px-4 py-2 rounded-full transition-all text-sm hover:bg-white dark:hover:bg-white/10">Pricing</a>
+                    <a href="about.html" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-secondary font-medium px-4 py-2 rounded-full transition-all text-sm hover:bg-white dark:hover:bg-white/10">About</a>
+                </nav>
+
+                <!-- Right Actions -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <div class="flex items-center gap-2 border-r border-gray-200 dark:border-gray-700 pr-4">
+                        <button id="theme-toggle" class="p-2 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-secondary transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-white/10" aria-label="Toggle Theme">
+                            <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
+                            <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
+                        </button>
+                        <button id="rtl-toggle" class="text-xs font-bold text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-secondary px-2">RTL</button>
+                    </div>
+                    <a href="login.html" class="text-gray-600 dark:text-gray-300 font-medium hover:text-primary dark:hover:text-secondary transition-colors text-sm">Login</a>
+                    <a href="dashboard.html" class="bg-primary hover:bg-primary-light text-white px-5 py-2.5 rounded-xl font-medium transition-all shadow-lg shadow-primary/20 text-sm flex items-center gap-2 hover:-translate-y-0.5">
+                        Client Portal <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="theme-toggle-mobile" class="p-2 text-gray-500 hover:text-primary dark:text-gray-400" aria-label="Toggle Theme">
+                        <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+                        <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                    </button>
+                    <button id="rtl-toggle-mobile" class="text-xs font-bold text-gray-500 hover:text-primary dark:text-gray-400 px-2">RTL</button>
+                    <button id="mobile-menu-btn" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white p-2">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-dark-card border-t border-gray-100 dark:border-white/10 absolute w-full shadow-2xl backdrop-blur-xl">
+            <div class="px-4 pt-2 pb-6 space-y-1 max-h-[80vh] overflow-y-auto">
+                                <div class="accordion-item w-full">
+                    <button class="w-full px-4 py-3 rounded-xl text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 flex justify-between items-center transition-colors">
+                        Home
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="px-4 pb-2 pt-1">
+                            <a href="index.html" class="block px-4 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-white/10 transition-colors">Corporate Home</a>
+                            <a href="home2.html" class="block px-4 py-2 mt-1 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-white/10 transition-colors">Cinematic Home</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="services.html" class="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5">Services</a>
+                <a href="search-methodology.html" class="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5">Methodology</a>
+                <a href="contact.html" class="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5">Contact</a>
+                <a href="reports.html" class="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5">Reports</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5">Pricing</a>
+                <a href="about.html" class="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5">About</a>
+                <div class="border-t border-gray-200 dark:border-gray-700 mt-4 pt-4 pb-2 space-y-3">
+                    <div class="flex items-center justify-between px-4 py-2 bg-gray-50 dark:bg-white/5 rounded-xl">
+                        <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Appearance</span>
+                        <div class="flex items-center gap-4">
+                            <button id="rtl-toggle-menu" class="text-xs font-bold text-gray-500 hover:text-primary dark:text-gray-400 px-2">RTL</button>
+                        </div>
+                    </div>
+                    <a href="login.html" class="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 text-center border border-gray-200 dark:border-gray-700">Login</a>
+                    <a href="dashboard.html" class="flex items-center gap-2 w-full justify-center bg-primary text-white px-4 py-3 rounded-xl font-medium shadow-lg">
+                        <i data-lucide="layout-dashboard" class="w-5 h-5"></i> Client Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- 1. Hero Section (Premium UI) -->
+        <section class="relative bg-primary overflow-hidden min-h-[90vh] flex items-center">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2070&auto=format&fit=crop" alt="Legal Research" class="w-full h-full object-cover opacity-20 mix-blend-luminosity">
+                <div class="absolute inset-0 bg-gradient-to-tr from-primary via-primary/95 to-primary/80 dark:from-dark-bg dark:via-dark-bg/95 dark:to-dark-bg/80"></div>
+                <div class="absolute inset-0 bg-grid-pattern opacity-20"></div>
+                
+                <!-- Glowing Orbs -->
+                <div class="absolute top-1/4 -left-32 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] mix-blend-screen"></div>
+                <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-blue-500/20 rounded-full blur-[120px] mix-blend-screen"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 lg:py-32 grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
+                    <div class="animate-on-scroll fade-up">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-semibold text-xs uppercase tracking-widest mb-6 backdrop-blur-sm shadow-inner shadow-secondary/5">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+                            </span>
+                            Trusted by 100+ Law Firms
+                        </div>
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-white leading-[1.1] mb-6 tracking-tight">
+                            Reduce Brand Risk <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-yellow-200">Before Filing</span>
+                        </h1>
+                        <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed font-light mx-auto lg:mx-0">
+                            Enterprise-grade trademark screening, risk analysis, and comprehensive clearance reporting designed specifically for law firms, corporate legal teams, and IP attorneys.
+                        </p>
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                            <a href="dashboard.html" class="bg-secondary hover:bg-secondary-light text-primary font-bold px-8 py-4 rounded-xl shadow-lg shadow-secondary/20 transition-all duration-300 flex items-center gap-2 hover:-translate-y-1 hover:shadow-secondary/40 group">
+                                Start Trademark Search <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                            <a href="reports.html" class="bg-white/5 hover:bg-white/10 text-white border border-white/10 font-medium px-8 py-4 rounded-xl transition-all duration-300 backdrop-blur-md flex items-center gap-2 hover:-translate-y-1 group">
+                                View Clearance Reports <i data-lucide="file-text" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Legal Dashboard Visual -->
+                <div class="hidden lg:block lg:col-span-5 relative">
+                    <div class="relative w-full aspect-square animate-float">
+                        <!-- Main Card -->
+                        <div class="absolute inset-0 bg-white/10 backdrop-blur-xl border border-white/20 p-6 rounded-3xl shadow-2xl z-20 flex flex-col transform rotate-y-[-5deg] rotate-x-[5deg]">
+                            <div class="flex justify-between items-center mb-6 pb-4 border-b border-white/10">
+                                <div class="flex gap-3 items-center">
+                                    <div class="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center">
+                                        <i data-lucide="shield-alert" class="text-secondary w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-white font-semibold leading-tight">Risk Assessment</h3>
+                                        <p class="text-xs text-gray-400">Live DB Scan</p>
+                                    </div>
+                                </div>
+                                <span class="bg-green-500/20 border border-green-500/30 text-green-400 text-xs px-3 py-1 rounded-full flex items-center gap-1">
+                                    <div class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div> Active
+                                </span>
+                            </div>
+                            
+                            <!-- Search Progress -->
+                            <div class="space-y-5 flex-1">
+                                <div>
+                                    <div class="flex justify-between text-sm text-gray-300 mb-2">
+                                        <span class="font-medium">USPTO Database Scan</span>
+                                        <span class="text-secondary font-mono">89%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-800/50 rounded-full h-2.5 overflow-hidden border border-white/5">
+                                        <div class="bg-gradient-to-r from-secondary to-yellow-200 h-2.5 rounded-full w-[89%] relative">
+                                            <div class="absolute inset-0 bg-white/30 animate-[pulse_2s_ease-in-out_infinite]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div class="flex justify-between text-sm text-gray-300 mb-2">
+                                        <span class="font-medium">WIPO Madrid Monitor</span>
+                                        <span class="text-green-400 font-mono">100%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-800/50 rounded-full h-2.5 overflow-hidden border border-white/5">
+                                        <div class="bg-gradient-to-r from-green-500 to-emerald-400 h-2.5 rounded-full w-full"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Risk Score -->
+                                <div class="mt-8 bg-gray-900/40 rounded-2xl p-4 border border-white/5 flex items-center justify-between">
+                                    <div>
+                                        <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Overall Risk Score</p>
+                                        <div class="text-white text-2xl font-bold font-heading">Low-Medium</div>
+                                    </div>
+                                    <div class="w-16 h-16 rounded-full border-4 border-secondary border-t-gray-700 flex items-center justify-center transform -rotate-45">
+                                        <span class="text-white font-bold transform rotate-45 text-sm">34%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating elements behind/around -->
+                        <div class="absolute -top-8 -right-8 bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-xl shadow-xl z-30 animate-float-delayed">
+                            <div class="flex gap-3 items-center">
+                                <div class="bg-blue-500/20 p-2 rounded-lg text-blue-400"><i data-lucide="check-circle" class="w-5 h-5"></i></div>
+                                <div>
+                                    <div class="text-white text-sm font-bold">Class 42</div>
+                                    <div class="text-xs text-gray-400">Cleared</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="absolute -bottom-6 -left-6 bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-xl shadow-xl z-30 animate-float" style="animation-delay: 1.5s;">
+                            <div class="flex gap-3 items-center">
+                                <div class="bg-red-500/20 p-2 rounded-lg text-red-400"><i data-lucide="alert-triangle" class="w-5 h-5"></i></div>
+                                <div>
+                                    <div class="text-white text-sm font-bold">Phonetic Match</div>
+                                    <div class="text-xs text-gray-400">Review Required</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom curved separator -->
+            <div class="absolute bottom-0 w-full overflow-hidden leading-[0]">
+                <svg class="relative block w-[calc(130%+1.3px)] h-[50px] md:h-[80px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" class="fill-white dark:fill-dark-card"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 2. Trusted Law Firms (Animated Grayscale) -->
+        <section class="py-16 bg-white dark:bg-dark-card border-b border-gray-100 dark:border-white/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-on-scroll fade-up">
+                <p class="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em] mb-10">Trusted by leading legal teams globally</p>
+                <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8 opacity-50 hover:opacity-100 transition-opacity duration-500">
+                    <!-- Client Logos (Representational SVG placeholders) -->
+                    <div class="flex items-center gap-2 text-2xl font-bold font-heading text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors cursor-pointer group">
+                        <i data-lucide="briefcase" class="group-hover:scale-110 transition-transform"></i> LegalCorp
+                    </div>
+                    <div class="flex items-center gap-2 text-2xl font-bold font-heading text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors cursor-pointer group">
+                        <i data-lucide="scale" class="group-hover:scale-110 transition-transform"></i> Sterling & Co
+                    </div>
+                    <div class="flex items-center gap-2 text-2xl font-bold font-heading text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors cursor-pointer group">
+                        <i data-lucide="landmark" class="group-hover:scale-110 transition-transform"></i> Global IP Group
+                    </div>
+                    <div class="flex items-center gap-2 text-2xl font-bold font-heading text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors cursor-pointer group">
+                        <i data-lucide="building-2" class="group-hover:scale-110 transition-transform"></i> TechLaw Partners
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Trademark Research Services (Glowing Cards) -->
+        <section class="py-28 bg-gray-50/50 dark:bg-dark-bg relative">
+            <div class="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-[0.03] dark:opacity-[0.02]"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-20 animate-on-scroll scale-up">
+                    <span class="text-secondary font-bold tracking-wider uppercase text-sm mb-3 block">Expertise</span>
+                    <h2 class="text-4xl md:text-5xl font-bold font-heading text-primary dark:text-white mb-6">Comprehensive IP Research</h2>
+                    <p class="text-gray-600 dark:text-gray-400 text-lg">We provide deep-dive analytical reporting to mitigate filing risks and protect corporate brand assets with uncompromising precision.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white dark:bg-dark-card rounded-2xl shadow-lg border border-gray-100 dark:border-white/5 transition-all group animate-on-scroll fade-up overflow-hidden">
+                        <div class="h-48 w-full relative overflow-hidden">
+                            <img src="assets/img/comprehensive_clearance.png" alt="Comprehensive Clearance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-white dark:from-dark-card to-transparent"></div>
+                        </div>
+                        <div class="p-8 pt-0 relative z-10">
+                            <h3 class="text-2xl font-bold font-heading text-gray-900 dark:text-white mb-4">Comprehensive Clearance</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">In-depth search of USPTO, state registries, common law databases, and domain registries to identify identical and confusingly similar marks.</p>
+                            <a href="services.html" class="text-primary dark:text-secondary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Explore Service <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-white dark:bg-dark-card rounded-2xl shadow-lg border border-gray-100 dark:border-white/5 transition-all group animate-on-scroll fade-up delay-100 overflow-hidden">
+                        <div class="h-48 w-full relative overflow-hidden">
+                            <img src="assets/img/international_screening.png" alt="International Screening" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-white dark:from-dark-card to-transparent"></div>
+                        </div>
+                        <div class="p-8 pt-0 relative z-10">
+                            <h3 class="text-2xl font-bold font-heading text-gray-900 dark:text-white mb-4">International Screening</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">WIPO Madrid Monitor and localized international database checks to ensure global brand expansion viability without legal conflicts.</p>
+                            <a href="services.html" class="text-primary dark:text-secondary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Explore Service <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-white dark:bg-dark-card rounded-2xl shadow-lg border border-gray-100 dark:border-white/5 transition-all group animate-on-scroll fade-up delay-200 overflow-hidden">
+                        <div class="h-48 w-full relative overflow-hidden">
+                            <img src="assets/img/litigation_risk_analysis.png" alt="Litigation Risk Analysis" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-white dark:from-dark-card to-transparent"></div>
+                        </div>
+                        <div class="p-8 pt-0 relative z-10">
+                            <h3 class="text-2xl font-bold font-heading text-gray-900 dark:text-white mb-4">Litigation Risk Analysis</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">Detailed assessment of TTAB proceedings and federal court litigations involving similar marks or aggressive corporate enforcers.</p>
+                            <a href="services.html" class="text-primary dark:text-secondary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Explore Service <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Search Workflow Process (Staggered Layout) -->
+        <section class="py-28 bg-white dark:bg-dark-card overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="animate-on-scroll fade-left relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary opacity-10 blur-2xl rounded-full"></div>
+                        <div class="relative img-zoom-container rounded-3xl overflow-hidden shadow-2xl border border-gray-100 dark:border-white/10">
+                            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop" alt="Corporate Legal Meeting" class="h-[600px] w-full object-cover">
+                            <!-- Overlay Badge -->
+                            <div class="absolute bottom-6 left-6 bg-white/90 dark:bg-dark-card/90 backdrop-blur-md p-4 rounded-xl shadow-xl flex items-center gap-4">
+                                <div class="bg-secondary text-primary w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl"><i data-lucide="award"></i></div>
+                                <div>
+                                    <div class="font-bold text-gray-900 dark:text-white">99.8% Accuracy</div>
+                                    <div class="text-sm text-gray-500 dark:text-gray-400">Validated by Attorneys</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="animate-on-scroll fade-right delay-200 flex flex-col items-center lg:items-start text-center lg:text-left">
+                        <span class="text-secondary font-bold tracking-wider uppercase text-sm mb-3 block">Methodology</span>
+                        <h2 class="text-4xl md:text-5xl font-bold font-heading text-primary dark:text-white mb-6 leading-tight">Structured Methodology for Ultimate Accuracy</h2>
+                        <p class="text-gray-600 dark:text-gray-400 mb-10 text-lg leading-relaxed mx-auto lg:mx-0 max-w-2xl">We don't just rely on automated AI tools. Our human-verified search methodology ensures nuanced legal risks, translations, and phonetic similarities are identified before you file.</p>
+                        
+                        <div class="space-y-8 relative w-full">
+                            <!-- Vertical Line -->
+                            <div class="absolute top-4 left-6 lg:left-6 w-0.5 h-[80%] bg-gray-200 dark:bg-gray-700 hidden lg:block"></div>
+                            
+                            <div class="flex flex-col lg:flex-row gap-6 relative group items-center lg:items-start text-center lg:text-left">
+                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-white dark:bg-dark-bg border-4 border-gray-100 dark:border-gray-800 flex items-center justify-center text-primary dark:text-white font-bold font-heading text-xl shadow-md group-hover:border-secondary transition-colors z-10">1</div>
+                                <div>
+                                    <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Parameter Definition</h4>
+                                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Collaborating with your legal team to define exact classes, jurisdictions, and search depth requirements.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-col lg:flex-row gap-6 relative group items-center lg:items-start text-center lg:text-left">
+                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-white dark:bg-dark-bg border-4 border-gray-100 dark:border-gray-800 flex items-center justify-center text-primary dark:text-white font-bold font-heading text-xl shadow-md group-hover:border-secondary transition-colors z-10">2</div>
+                                <div>
+                                    <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Algorithmic & Manual Search</h4>
+                                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Deploying proprietary queries across USPTO databases followed by intensive manual review for phonetics.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-col lg:flex-row gap-6 relative group items-center lg:items-start text-center lg:text-left">
+                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary border-4 border-white dark:border-dark-bg flex items-center justify-center text-primary font-bold font-heading text-xl shadow-lg shadow-secondary/30 z-10 animate-pulse-slow">3</div>
+                                <div>
+                                    <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Risk Scoring & Reporting</h4>
+                                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Delivering a comprehensive PDF/Dashboard report with actionable legal insights and conflict severity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Sample Clearance Reports (Elevated Cards) -->
+        <section class="py-28 bg-gray-50 dark:bg-dark-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6 animate-on-scroll fade-up text-center lg:text-left items-center lg:items-start">
+                    <div class="max-w-2xl mx-auto lg:mx-0">
+                        <span class="text-secondary font-bold tracking-wider uppercase text-sm mb-3 block">Deliverables</span>
+                        <h2 class="text-4xl md:text-5xl font-bold font-heading text-primary dark:text-white mb-4">Enterprise Reporting</h2>
+                        <p class="text-gray-600 dark:text-gray-400 text-lg">Clear, concise, and structured data designed for immediate presentation to your corporate clients.</p>
+                    </div>
+                    <a href="reports.html" class="bg-white dark:bg-dark-card border border-gray-200 dark:border-white/10 text-primary dark:text-white font-bold px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition-all inline-flex items-center gap-2 hover:bg-gray-50 dark:hover:bg-white/5 whitespace-nowrap">View All Reports <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="bg-white dark:bg-dark-card rounded-2xl border border-gray-200 dark:border-white/5 overflow-hidden group animate-on-scroll fade-up hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+                        <div class="h-64 bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop" alt="Report Preview" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 mix-blend-multiply dark:mix-blend-overlay">
+                            <!-- Overlay Dark Gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button class="w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-primary shadow-xl transform scale-75 group-hover:scale-100 transition-transform duration-500 delay-100">
+                                    <i data-lucide="download" class="w-6 h-6"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-8 relative">
+                            <!-- Decorative Circle -->
+                            <div class="absolute top-0 right-8 transform -translate-y-1/2 w-16 h-16 bg-red-100 dark:bg-red-900/30 border-4 border-white dark:border-dark-card rounded-full flex items-center justify-center text-red-600 dark:text-red-400 font-bold shadow-md">
+                                High
+                            </div>
+                            
+                            <span class="text-xs font-bold text-secondary uppercase tracking-wider mb-2 block">SaaS / Software</span>
+                            <h3 class="text-2xl font-bold font-heading text-gray-900 dark:text-white mb-4">TechFlowâ„¢ Clearance Report</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">Analysis of Class 42 software services revealing significant phonetic conflicts with active USPTO registrations and potential domain name disputes.</p>
+                            
+                            <div class="flex items-center gap-6 pt-6 border-t border-gray-100 dark:border-white/10 text-sm text-gray-500 dark:text-gray-400 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5 text-gray-400"></i> 42 Pages</span>
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-5 h-5 text-gray-400"></i> 48h Turnaround</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-dark-card rounded-2xl border border-gray-200 dark:border-white/5 overflow-hidden group animate-on-scroll fade-up delay-200 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+                        <div class="h-64 bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop" alt="Report Preview" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 mix-blend-multiply dark:mix-blend-overlay">
+                            <!-- Overlay Dark Gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button class="w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-primary shadow-xl transform scale-75 group-hover:scale-100 transition-transform duration-500 delay-100">
+                                    <i data-lucide="download" class="w-6 h-6"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-8 relative">
+                            <!-- Decorative Circle -->
+                            <div class="absolute top-0 right-8 transform -translate-y-1/2 w-16 h-16 bg-green-100 dark:bg-green-900/30 border-4 border-white dark:border-dark-card rounded-full flex items-center justify-center text-green-600 dark:text-green-400 font-bold shadow-md">
+                                Low
+                            </div>
+                            
+                            <span class="text-xs font-bold text-secondary uppercase tracking-wider mb-2 block">Consumer Goods</span>
+                            <h3 class="text-2xl font-bold font-heading text-gray-900 dark:text-white mb-4">Aura Botanicsâ„¢ Analysis</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">Multi-class search (Class 3, 5) showing clear path to registration with minor common law usage recommendations and clear international viability.</p>
+                            
+                            <div class="flex items-center gap-6 pt-6 border-t border-gray-100 dark:border-white/10 text-sm text-gray-500 dark:text-gray-400 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5 text-gray-400"></i> 28 Pages</span>
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-5 h-5 text-gray-400"></i> 24h Turnaround</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Testimonials (Carousel/Grid feel) -->
+        <section class="py-28 bg-white dark:bg-dark-card border-t border-gray-100 dark:border-white/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-20 animate-on-scroll scale-up">
+                    <span class="text-secondary font-bold tracking-wider uppercase text-sm mb-3 block">Testimonials</span>
+                    <h2 class="text-4xl md:text-5xl font-bold font-heading text-primary dark:text-white mb-4">Trusted by IP Attorneys</h2>
+                    <div class="w-24 h-1 bg-secondary mx-auto mt-6 rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="bg-gray-50/80 dark:bg-dark-bg p-10 rounded-3xl relative animate-on-scroll fade-left group hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-200 dark:hover:border-white/10">
+                        <i data-lucide="quote" class="w-16 h-16 text-primary/5 dark:text-white/5 absolute top-8 right-8 transform group-hover:scale-110 transition-transform"></i>
+                        <div class="flex items-center gap-1 text-secondary mb-6">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-xl mb-10 italic leading-relaxed font-light">"The depth of research provided by IPShield is unparalleled. Their clearance reports have saved our clients thousands in potential litigation costs. Highly recommended for any serious corporate firm."</p>
+                        <div class="flex items-center gap-5">
+                            <div class="w-16 h-16 bg-gray-300 rounded-full overflow-hidden border-2 border-white shadow-md">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" alt="Attorney" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 dark:text-white text-lg">James Harrison, Esq.</h4>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Managing Partner, Harrison IP Law</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50/80 dark:bg-dark-bg p-10 rounded-3xl relative animate-on-scroll fade-right delay-200 group hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-200 dark:hover:border-white/10">
+                        <i data-lucide="quote" class="w-16 h-16 text-primary/5 dark:text-white/5 absolute top-8 right-8 transform group-hover:scale-110 transition-transform"></i>
+                        <div class="flex items-center gap-1 text-secondary mb-6">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-xl mb-10 italic leading-relaxed font-light">"The client dashboard is a game-changer. We can easily track all our pending searches, download final reports, and monitor filing deadlines in one highly secure portal."</p>
+                        <div class="flex items-center gap-5">
+                            <div class="w-16 h-16 bg-gray-300 rounded-full overflow-hidden border-2 border-white shadow-md">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" alt="Counsel" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 dark:text-white text-lg">Sarah Chen</h4>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Chief Corporate Counsel, TechNova</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CTA Banner (Modern & Bold) -->
+        <section class="py-24 relative overflow-hidden">
+            <div class="absolute inset-0 bg-primary"></div>
+            <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2070')] opacity-5 mix-blend-overlay object-cover"></div>
+            <div class="absolute top-0 right-0 w-full md:w-1/2 h-full bg-gradient-to-l from-secondary/20 to-transparent blur-3xl"></div>
+            
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6 animate-on-scroll fade-up leading-tight">Ready to Secure Your Client's Brand Assets?</h2>
+                <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto animate-on-scroll fade-up delay-100 font-light">Submit a new search request today and receive a comprehensive, attorney-ready clearance report within 48 hours.</p>
+                <div class="flex flex-wrap justify-center gap-6 animate-on-scroll scale-up delay-200">
+                    <a href="dashboard.html" class="bg-secondary hover:bg-secondary-light text-primary font-bold px-10 py-5 rounded-xl shadow-lg shadow-secondary/20 transition-all duration-300 text-lg hover:-translate-y-1">Submit Search Request</a>
+                    <a href="contact.html" class="bg-white/5 backdrop-blur-md border border-white/20 text-white hover:bg-white/10 font-bold px-10 py-5 rounded-xl transition-all duration-300 text-lg hover:-translate-y-1">Schedule Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Remains structured, slight padding tweaks) -->
+    <footer class="bg-dark-bg border-t border-gray-800 pt-20 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
+                <div class="col-span-1 lg:col-span-4">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-secondary rounded-xl flex items-center justify-center text-primary font-bold shadow-md">
+                            <i data-lucide="scale" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-heading font-bold text-2xl text-white tracking-tight">IP<span class="text-secondary">Shield</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-8 leading-relaxed pr-4">Premium trademark research and IP clearance solutions tailored for demanding law firms and corporate legal departments globally.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-primary transition-all"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-primary transition-all"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-primary transition-all"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 lg:col-start-6">
+                    <h4 class="text-white font-bold mb-6 text-lg">Services</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="services.html" class="text-gray-400 hover:text-secondary transition-colors font-medium">Comprehensive Clearance</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-secondary transition-colors font-medium">International Screening</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-secondary transition-colors font-medium">Design Mark Search</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-secondary transition-colors font-medium">Common Law Review</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h4 class="text-white font-bold mb-6 text-lg">Company</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="about.html" class="text-gray-400 hover:text-secondary transition-colors font-medium">About Us</a></li>
+                        <li><a href="search-methodology.html" class="text-gray-400 hover:text-secondary transition-colors font-medium">Methodology</a></li>
+                        <li><a href="reports.html" class="text-gray-400 hover:text-secondary transition-colors font-medium">Sample Reports</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-secondary transition-colors font-medium">Pricing Options</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3">
+                    <h4 class="text-white font-bold mb-6 text-lg">Client Portal</h4>
+                    <ul class="space-y-4 text-sm mb-8">
+                        <li><a href="login.html" class="text-gray-400 hover:text-secondary transition-colors font-medium">Secure Login</a></li>
+                        <li><a href="dashboard.html" class="text-gray-400 hover:text-secondary transition-colors font-medium">Access Dashboard</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-secondary transition-colors font-medium">Track Status</a></li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-2 text-sm text-white bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-all border border-white/5">
+                        <i data-lucide="headphones" class="w-4 h-4"></i> Contact Support
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm font-medium">Â© 2026 IPShield Research. All rights reserved.</p>
+                <div class="flex gap-6 text-sm font-medium">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">NDA Request</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Init JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+

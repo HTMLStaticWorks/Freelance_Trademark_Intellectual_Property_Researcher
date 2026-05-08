@@ -1,0 +1,13 @@
+{
+  "name": "trademark-researcher",
+  "version": "1.0.0",
+  "description": "Premium Trademark & IP Researcher Platform",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
