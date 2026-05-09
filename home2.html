@@ -248,6 +248,10 @@
                             class="bg-secondary hover:bg-secondary-light text-primary font-bold px-8 py-4 md:px-10 md:py-5 rounded-xl shadow-2xl shadow-secondary/20 transition-all duration-300 text-base md:text-lg hover:-translate-y-1 flex items-center gap-2 md:gap-3">
                             <i data-lucide="search" class="w-5 h-5 md:w-6 md:h-6"></i> Initialize Search
                         </a>
+                        <a href="#"
+                            class="bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-4 md:px-10 md:py-5 rounded-xl border border-white/10 backdrop-blur-md transition-all duration-300 text-base md:text-lg hover:-translate-y-1 flex items-center gap-2 md:gap-3 group">
+                            <i data-lucide="play-circle" class="w-5 h-5 md:w-6 md:h-6 text-secondary group-hover:scale-110 transition-transform"></i> Watch Demo
+                        </a>
                     </div>
                 </div>
             </div>
@@ -257,6 +261,20 @@
                 class="absolute bottom-8 md:bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 animate-bounce opacity-70">
                 <span class="text-[10px] md:text-xs text-gray-400 uppercase tracking-widest font-bold">Scroll</span>
                 <i data-lucide="arrow-down" class="text-white w-4 h-4 md:w-5 md:h-5"></i>
+            </div>
+        </section>
+
+        <!-- 1.5 Trusted By -->
+        <section class="pt-12 pb-32 md:pb-52 bg-[#0a1120] border-y border-white/5 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <p class="text-center text-gray-500 text-xs font-bold uppercase tracking-[0.3em] mb-10">Trusted by Global Legal Departments</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                    <span class="text-white font-heading font-bold text-xl md:text-2xl tracking-tighter">LEX<span class="text-secondary">PRO</span></span>
+                    <span class="text-white font-heading font-bold text-xl md:text-2xl tracking-tighter">MARK<span class="text-secondary">EL</span></span>
+                    <span class="text-white font-heading font-bold text-xl md:text-2xl tracking-tighter">GLOBAL<span class="text-secondary">LAW</span></span>
+                    <span class="text-white font-heading font-bold text-xl md:text-2xl tracking-tighter">IP<span class="text-secondary">GUARD</span></span>
+                    <span class="text-white font-heading font-bold text-xl md:text-2xl tracking-tighter">LEGAL<span class="text-secondary">CORE</span></span>
+                </div>
             </div>
         </section>
 
@@ -277,44 +295,76 @@
                         <div
                             class="bg-[#0f172a] rounded-2xl border border-gray-800 overflow-hidden relative aspect-video flex flex-col">
                             <!-- Dashboard UI Mockup -->
-                            <div
-                                class="h-16 border-b border-gray-800 flex items-center px-6 justify-between bg-gray-900/50">
-                                <div class="flex items-center gap-4 text-white font-bold"><i data-lucide="scale"
-                                        class="text-secondary"></i> IPShield Dashboard</div>
+                            <div class="h-14 border-b border-gray-800 flex items-center px-6 justify-between bg-gray-900/50">
+                                <div class="flex items-center gap-4 text-white font-bold text-sm">
+                                    <i data-lucide="scale" class="text-secondary w-5 h-5"></i> IPShield Dashboard
+                                </div>
                                 <div class="flex gap-4">
-                                    <div class="w-32 h-8 bg-gray-800 rounded animate-pulse"></div>
-                                    <div class="w-8 h-8 bg-gray-800 rounded-full animate-pulse"></div>
+                                    <div class="w-32 h-7 bg-gray-800 rounded-full border border-gray-700"></div>
+                                    <div class="w-7 h-7 bg-gray-800 rounded-full border border-gray-700"></div>
                                 </div>
                             </div>
-                            <div class="flex-1 flex p-6 gap-6">
-                                <div class="w-64 space-y-4">
-                                    <div class="h-10 bg-gray-800 rounded"></div>
-                                    <div class="h-10 bg-gray-800 rounded"></div>
-                                    <div class="h-10 bg-gray-800 rounded"></div>
-                                </div>
-                                <div class="flex-1 space-y-6">
-                                    <div class="flex gap-6">
-                                        <div
-                                            class="flex-1 h-32 bg-gray-800/50 border border-gray-700 rounded-xl p-4 flex flex-col justify-between">
-                                            <div class="w-1/2 h-4 bg-gray-700 rounded"></div>
-                                            <div
-                                                class="w-full h-8 bg-gradient-to-r from-secondary to-yellow-500 rounded">
-                                            </div>
+                            <div class="flex-1 flex p-4 gap-4 overflow-hidden">
+                                <!-- Sidebar -->
+                                <div class="w-48 space-y-3 hidden md:block">
+                                    <div class="h-9 bg-primary/20 border border-secondary/20 rounded-lg flex items-center px-3 gap-3">
+                                        <div class="w-2 h-2 rounded-full bg-secondary"></div>
+                                        <div class="flex-1 h-2 bg-secondary/30 rounded"></div>
+                                    </div>
+                                    <div class="h-9 bg-gray-800/40 rounded-lg flex items-center px-3 gap-3">
+                                        <div class="w-2 h-2 rounded-full bg-gray-600"></div>
+                                        <div class="flex-1 h-2 bg-gray-700 rounded"></div>
+                                    </div>
+                                    <div class="h-9 bg-gray-800/40 rounded-lg flex items-center px-3 gap-3">
+                                        <div class="w-2 h-2 rounded-full bg-gray-600"></div>
+                                        <div class="flex-1 h-2 bg-gray-700 rounded"></div>
+                                    </div>
+                                    <div class="mt-8 px-3">
+                                        <div class="w-1/2 h-2 bg-gray-700 rounded mb-4"></div>
+                                        <div class="space-y-3">
+                                            <div class="h-1.5 bg-gray-800 rounded w-full"></div>
+                                            <div class="h-1.5 bg-gray-800 rounded w-3/4"></div>
                                         </div>
-                                        <div
-                                            class="flex-1 h-32 bg-gray-800/50 border border-gray-700 rounded-xl p-4 flex flex-col justify-between">
-                                            <div class="w-1/2 h-4 bg-gray-700 rounded"></div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Content -->
+                                <div class="flex-1 space-y-4">
+                                    <div class="flex gap-4">
+                                        <div class="flex-1 h-28 bg-gray-800/30 border border-gray-700 rounded-xl p-4 flex flex-col justify-between group hover:border-secondary/30 transition-colors">
+                                            <div class="flex justify-between items-start">
+                                                <div class="w-2/3 h-2.5 bg-gray-600 rounded"></div>
+                                                <i data-lucide="trending-up" class="w-4 h-4 text-secondary"></i>
+                                            </div>
+                                            <div class="w-full h-8 bg-gradient-to-r from-secondary to-yellow-500 rounded-lg shadow-lg shadow-secondary/10"></div>
+                                        </div>
+                                        <div class="flex-1 h-28 bg-gray-800/30 border border-gray-700 rounded-xl p-4 flex flex-col justify-between group hover:border-red-500/30 transition-colors">
+                                            <div class="flex justify-between items-start">
+                                                <div class="w-2/3 h-2.5 bg-gray-600 rounded"></div>
+                                                <i data-lucide="alert-circle" class="w-4 h-4 text-red-400"></i>
+                                            </div>
                                             <div class="flex gap-2">
-                                                <div class="w-12 h-12 bg-red-500/20 rounded-full"></div>
-                                                <div class="w-12 h-12 bg-green-500/20 rounded-full"></div>
+                                                <div class="w-10 h-10 bg-red-500/20 rounded-lg border border-red-500/30"></div>
+                                                <div class="w-10 h-10 bg-green-500/20 rounded-lg border border-green-500/30"></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                        class="h-64 bg-gray-800/50 border border-gray-700 rounded-xl w-full p-6 relative overflow-hidden">
-                                        <!-- Animated Chart Lines -->
-                                        <div
-                                            class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-secondary/20 to-transparent">
+                                    <div class="h-48 bg-gray-800/20 border border-gray-700 rounded-xl w-full p-6 relative overflow-hidden flex flex-col">
+                                        <div class="flex justify-between items-center mb-8">
+                                            <div class="w-32 h-3 bg-gray-700 rounded"></div>
+                                            <div class="flex gap-2">
+                                                <div class="w-12 h-6 bg-gray-800 rounded border border-gray-700"></div>
+                                                <div class="w-12 h-6 bg-gray-800 rounded border border-gray-700"></div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 flex items-end gap-2">
+                                            <div class="flex-1 bg-gray-700/50 rounded-t h-12"></div>
+                                            <div class="flex-1 bg-secondary/50 rounded-t h-24"></div>
+                                            <div class="flex-1 bg-gray-700/50 rounded-t h-16"></div>
+                                            <div class="flex-1 bg-secondary/50 rounded-t h-32"></div>
+                                            <div class="flex-1 bg-gray-700/50 rounded-t h-20"></div>
+                                            <div class="flex-1 bg-secondary/50 rounded-t h-28"></div>
+                                            <div class="flex-1 bg-gray-700/50 rounded-t h-14"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -369,6 +419,48 @@
                         <div class="absolute inset-0 bg-secondary/10 blur-[100px] rounded-full"></div>
                         <img src="assets/img/global_ip_databases.png" alt="Server Data"
                             class="relative z-10 rounded-3xl shadow-2xl border border-gray-200 dark:border-white/10 h-[500px] w-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4.5 Core Technology Grid -->
+        <section class="py-28 bg-white dark:bg-dark-card">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-20 animate-on-scroll scale-up">
+                    <h2 class="text-4xl md:text-5xl font-bold font-heading text-primary dark:text-white mb-6">Advanced IP Intelligence</h2>
+                    <p class="text-gray-600 dark:text-gray-400 text-lg">Sophisticated tools designed for the most complex trademark challenges.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="p-8 rounded-2xl bg-gray-50 dark:bg-dark-bg border border-gray-100 dark:border-white/5 hover:border-secondary/30 transition-all group animate-on-scroll fade-up">
+                        <i data-lucide="cpu" class="w-10 h-10 text-secondary mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Neural Similarity Engine</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">AI-driven algorithms that detect phonetic and visual conflicts missed by traditional Boolean searches.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-50 dark:bg-dark-bg border border-gray-100 dark:border-white/5 hover:border-secondary/30 transition-all group animate-on-scroll fade-up delay-100">
+                        <i data-lucide="refresh-cw" class="w-10 h-10 text-secondary mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-Time Monitoring</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Continuous tracking of competing applications with instant alerts for potential infringement.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-50 dark:bg-dark-bg border border-gray-100 dark:border-white/5 hover:border-secondary/30 transition-all group animate-on-scroll fade-up delay-200">
+                        <i data-lucide="file-search" class="w-10 h-10 text-secondary mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Deep Web Crawling</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Scouring non-traditional sources including social media, app stores, and domain registries.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-50 dark:bg-dark-bg border border-gray-100 dark:border-white/5 hover:border-secondary/30 transition-all group animate-on-scroll fade-up delay-300">
+                        <i data-lucide="bar-chart-3" class="w-10 h-10 text-secondary mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Predictive Risk Scoring</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Quantitative probability models assessing the likelihood of USPTO rejection or opposition.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-50 dark:bg-dark-bg border border-gray-100 dark:border-white/5 hover:border-secondary/30 transition-all group animate-on-scroll fade-up delay-400">
+                        <i data-lucide="history" class="w-10 h-10 text-secondary mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Historical Analysis</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Deep dive into a mark's previous registration attempts and abandonment patterns.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-50 dark:bg-dark-bg border border-gray-100 dark:border-white/5 hover:border-secondary/30 transition-all group animate-on-scroll fade-up delay-500">
+                        <i data-lucide="layers" class="w-10 h-10 text-secondary mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Class Conflict Logic</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Intelligent cross-referencing of international classes (NICE) for related-goods conflicts.</p>
                     </div>
                 </div>
             </div>
@@ -447,6 +539,22 @@
                             <p class="text-gray-600 dark:text-gray-400">No active federal registrations, but prominent
                                 common law usage detected in related commercial streams. Vulnerable to TTAB opposition.
                             </p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <a href="reports.html"
+                                class="px-6 py-3 bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-900 dark:text-white font-medium rounded-lg transition-colors">View
+                                Example</a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white dark:bg-dark-card border border-gray-200 dark:border-white/5 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-8 shadow-md hover:shadow-xl transition-shadow animate-on-scroll fade-up delay-200">
+                        <div
+                            class="flex-shrink-0 w-24 h-24 rounded-full border-8 border-green-100 dark:border-green-900/30 border-t-green-500 flex items-center justify-center text-green-500 font-bold text-xl">
+                            Low</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold font-heading text-gray-900 dark:text-white mb-2">Clear Path to Registration</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Minimal phonetic or visual similarities found in relevant classes. No active common law threats identified. Recommended for immediate filing.</p>
                         </div>
                         <div class="flex-shrink-0">
                             <a href="reports.html"
