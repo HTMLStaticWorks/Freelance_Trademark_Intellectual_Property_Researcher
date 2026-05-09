@@ -39,7 +39,7 @@
         <div id="sidebar-backdrop" class="fixed inset-0 bg-gray-900/50 backdrop-blur-sm z-40 hidden transition-opacity duration-300"></div>
 
         <!-- Sidebar Navigation -->
-        <aside id="dashboard-sidebar" class="fixed inset-y-0 left-0 w-72 bg-white dark:bg-dark-card border-r border-gray-200 dark:border-white/5 flex flex-col h-full z-50 transition-transform duration-300 transform -translate-x-full">
+        <aside id="dashboard-sidebar" class="fixed inset-y-0 left-0 w-72 bg-white dark:bg-dark-card border-r border-gray-200 dark:border-white/5 flex flex-col h-full z-50 transition-transform duration-300 transform -translate-x-full lg:relative lg:translate-x-0">
             <!-- Sidebar Header -->
             <div class="h-20 flex items-center justify-between px-6 border-b border-gray-200 dark:border-white/5">
                 <a href="index.html" class="flex items-center gap-3 group">
@@ -127,7 +127,7 @@
             <!-- Top Navbar -->
             <header class="h-20 bg-white dark:bg-dark-card border-b border-gray-200 dark:border-white/5 flex items-center justify-between px-6 z-10">
                 <div class="flex items-center gap-4">
-                    <button id="dashboard-menu-btn" class="p-2 text-gray-500 hover:text-primary dark:hover:text-secondary hover:bg-gray-100 dark:hover:bg-white/10 rounded-lg transition-all">
+                    <button id="dashboard-menu-btn" class="p-2 text-gray-500 hover:text-primary dark:hover:text-secondary hover:bg-gray-100 dark:hover:bg-white/10 rounded-lg transition-all lg:hidden">
                         <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                     <!-- Logo (Mobile Only) -->
@@ -137,23 +137,23 @@
                         </div>
                         <span class="font-heading font-bold text-lg text-primary dark:text-white tracking-tight">IP<span class="text-secondary">Shield</span></span>
                     </a>
-                    <h1 class="text-2xl font-bold font-heading text-gray-900 dark:text-white hidden md:block">Dashboard Overview</h1>
+                    <h1 class="text-xl font-bold font-heading text-gray-900 dark:text-white hidden lg:block">Dashboard Overview</h1>
                 </div>
 
                 <div class="flex items-center gap-4">
                     <!-- Global Search -->
-                    <div class="hidden md:flex relative group">
+                    <div class="hidden lg:flex relative group">
                         <i data-lucide="search" class="w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-secondary transition-colors"></i>
-                        <input type="text" placeholder="Search reports or filings..." class="pl-10 pr-4 py-2 bg-gray-100 dark:bg-gray-800 border-transparent dark:border-white/5 rounded-lg text-sm focus:bg-white dark:focus:bg-dark-card focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all w-64 text-gray-800 dark:text-white">
+                        <input type="text" placeholder="Search reports..." class="pl-10 pr-4 py-2 bg-gray-100 dark:bg-gray-800 border-transparent dark:border-white/5 rounded-lg text-sm focus:bg-white dark:focus:bg-dark-card focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all w-48 text-gray-800 dark:text-white">
                     </div>
                     
                     <!-- Quick Action Button -->
-                    <button class="bg-secondary hover:bg-secondary-light text-primary font-bold px-4 py-2 rounded-lg text-sm flex items-center gap-2 transition-all shadow-md shadow-secondary/10 hover:-translate-y-0.5">
-                        <i data-lucide="plus" class="w-4 h-4"></i> <span class="hidden lg:inline">Start New Search</span>
+                    <button class="bg-secondary hover:bg-secondary-light text-primary font-bold p-2 rounded-lg transition-all shadow-md sm:px-4 sm:py-2 flex items-center gap-2">
+                        <i data-lucide="plus" class="w-5 h-5"></i> <span class="hidden sm:inline text-sm">New Search</span>
                     </button>
 
-                    <!-- Toggles -->
-                    <div class="flex items-center gap-1 border-x border-gray-200 dark:border-white/10 px-4">
+                    <!-- Toggles (Desktop only) -->
+                    <div class="hidden sm:flex items-center gap-1 border-x border-gray-200 dark:border-white/10 px-4">
                         <button id="theme-toggle" class="p-2 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-secondary transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-white/10" aria-label="Toggle Theme">
                             <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
                             <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
@@ -167,10 +167,7 @@
                         <span class="absolute top-1.5 right-1.5 w-2 h-2 bg-secondary rounded-full border border-white dark:border-dark-card"></span>
                     </button>
 
-                    <!-- Start Search CTA -->
-                    <button class="hidden sm:flex bg-secondary hover:bg-secondary-light text-primary font-bold px-4 py-2 rounded-lg transition-all items-center gap-2 text-sm shadow-md">
-                        <i data-lucide="plus" class="w-4 h-4"></i> New Search
-                    </button>
+
                 </div>
             </header>
 
@@ -255,7 +252,7 @@
                     </div>
 
                     <!-- Main Grid: Recent Activity & Calendar -->
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                         
                         <!-- Recent Search Requests (Col Span 2) -->
                         <div class="lg:col-span-2 bg-white dark:bg-dark-card rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm animate-on-scroll fade-left delay-100 overflow-hidden">

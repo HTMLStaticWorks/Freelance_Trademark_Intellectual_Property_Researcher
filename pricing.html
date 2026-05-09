@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,9 @@
     </script>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 dark:bg-dark-bg dark:text-gray-200 transition-colors duration-300 font-sans antialiased">
+
+<body
+    class="bg-gray-50 text-gray-800 dark:bg-dark-bg dark:text-gray-200 transition-colors duration-300 font-sans antialiased">
     <!-- Header Navigation -->
     <header
         class="fixed w-full top-0 z-50 bg-white/80 dark:bg-dark-bg/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-white/10 transition-all duration-300">
@@ -80,7 +83,7 @@
                         class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 font-medium hover:bg-gray-200 dark:hover:bg-gray-700 px-5 py-2 rounded-full transition-all text-sm border border-gray-200 dark:border-gray-700">Login</a>
                     <a href="dashboard.html"
                         class="bg-primary hover:bg-primary-light text-white px-5 py-2.5 rounded-xl font-medium transition-all shadow-lg shadow-primary/20 text-sm flex items-center gap-2 hover:-translate-y-0.5">
-                        Client Portal <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        <i data-lucide="layout-dashboard" class="w-4 h-4"></i> Client Dashboard
                     </a>
                 </div>
 
@@ -152,59 +155,91 @@
         <!-- 1. Hero -->
         <section class="relative bg-[#0a1120] overflow-hidden min-h-[50vh] flex items-center">
             <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
-            <div class="absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] mix-blend-screen"></div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-32 text-center animate-on-scroll scale-up">
-                <h1 class="text-5xl md:text-6xl font-bold font-heading text-white mb-6">Transparent <span class="text-secondary">Pricing</span></h1>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">Enterprise-grade clearance reports with fixed, predictable costs for law firms.</p>
+            <div
+                class="absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] mix-blend-screen">
+            </div>
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-32 text-center animate-on-scroll scale-up">
+                <h1 class="text-5xl md:text-6xl font-bold font-heading text-white mb-6">Transparent <span
+                        class="text-secondary">Pricing</span></h1>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">Enterprise-grade clearance reports with fixed,
+                    predictable costs for law firms.</p>
             </div>
         </section>
 
         <!-- 2. Pricing Cards -->
         <section class="py-24 bg-gray-50 dark:bg-dark-bg -mt-20 relative z-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-8">
-                
+
                 <!-- Basic -->
-                <div class="bg-white dark:bg-dark-card rounded-2xl p-8 border border-gray-200 dark:border-white/5 shadow-lg animate-on-scroll fade-up mt-8">
+                <div
+                    class="bg-white dark:bg-dark-card rounded-2xl p-8 border border-gray-200 dark:border-white/5 shadow-lg animate-on-scroll fade-up mt-8">
                     <h3 class="text-2xl font-bold font-heading text-gray-900 dark:text-white mb-2">Basic Search</h3>
                     <p class="text-gray-500 text-sm mb-6">Knockout search for identical marks.</p>
-                    <div class="text-4xl font-bold text-primary dark:text-white mb-6">$250 <span class="text-lg text-gray-400 font-medium">/mark</span></div>
+                    <div class="text-4xl font-bold text-primary dark:text-white mb-6">$250 <span
+                            class="text-lg text-gray-400 font-medium">/mark</span></div>
                     <ul class="space-y-4 mb-8">
-                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="text-green-500 w-5 h-5 flex-shrink-0"></i> USPTO Exact Match Search</li>
-                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="text-green-500 w-5 h-5 flex-shrink-0"></i> Active & Dead Marks</li>
-                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="text-green-500 w-5 h-5 flex-shrink-0"></i> 24h Turnaround</li>
-                        <li class="flex gap-3 text-gray-400 dark:text-gray-600"><i data-lucide="minus" class="w-5 h-5 flex-shrink-0"></i> No Risk Assessment</li>
+                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check"
+                                class="text-green-500 w-5 h-5 flex-shrink-0"></i> USPTO Exact Match Search</li>
+                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check"
+                                class="text-green-500 w-5 h-5 flex-shrink-0"></i> Active & Dead Marks</li>
+                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check"
+                                class="text-green-500 w-5 h-5 flex-shrink-0"></i> 24h Turnaround</li>
+                        <li class="flex gap-3 text-gray-400 dark:text-gray-600"><i data-lucide="minus"
+                                class="w-5 h-5 flex-shrink-0"></i> No Risk Assessment</li>
                     </ul>
-                    <a href="signup.html" class="block w-full text-center bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-primary dark:text-white font-bold py-3 rounded-lg transition-colors">Select Basic</a>
+                    <a href="signup.html"
+                        class="block w-full text-center bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-primary dark:text-white font-bold py-3 rounded-lg transition-colors">Select
+                        Basic</a>
                 </div>
 
                 <!-- POPULAR Pro -->
-                <div class="bg-primary rounded-2xl p-8 shadow-2xl relative animate-on-scroll scale-up transform lg:-translate-y-4 glow-effect">
-                    <div class="absolute top-0 right-0 bg-secondary text-primary font-bold text-xs px-4 py-1 rounded-bl-xl rounded-tr-xl uppercase tracking-wider">Most Popular</div>
+                <div
+                    class="bg-primary rounded-2xl p-8 shadow-2xl relative animate-on-scroll scale-up transform lg:-translate-y-4 glow-effect">
+                    <div
+                        class="absolute top-0 right-0 bg-secondary text-primary font-bold text-xs px-4 py-1 rounded-bl-xl rounded-tr-xl uppercase tracking-wider">
+                        Most Popular</div>
                     <h3 class="text-2xl font-bold font-heading text-white mb-2">Pro Clearance</h3>
                     <p class="text-gray-300 text-sm mb-6">Comprehensive review and risk scoring.</p>
-                    <div class="text-4xl font-bold text-white mb-6">$650 <span class="text-lg text-gray-400 font-medium">/mark</span></div>
+                    <div class="text-4xl font-bold text-white mb-6">$650 <span
+                            class="text-lg text-gray-400 font-medium">/mark</span></div>
                     <ul class="space-y-4 mb-8">
-                        <li class="flex gap-3 text-gray-200"><i data-lucide="check" class="text-secondary w-5 h-5 flex-shrink-0"></i> Everything in Basic</li>
-                        <li class="flex gap-3 text-gray-200"><i data-lucide="check" class="text-secondary w-5 h-5 flex-shrink-0"></i> Phonetic & Translation Search</li>
-                        <li class="flex gap-3 text-gray-200"><i data-lucide="check" class="text-secondary w-5 h-5 flex-shrink-0"></i> Common Law & Domain Scan</li>
-                        <li class="flex gap-3 text-gray-200"><i data-lucide="check" class="text-secondary w-5 h-5 flex-shrink-0"></i> Attorney-Ready PDF Report</li>
-                        <li class="flex gap-3 text-gray-200"><i data-lucide="check" class="text-secondary w-5 h-5 flex-shrink-0"></i> Proprietary Risk Scoring</li>
+                        <li class="flex gap-3 text-gray-200"><i data-lucide="check"
+                                class="text-secondary w-5 h-5 flex-shrink-0"></i> Everything in Basic</li>
+                        <li class="flex gap-3 text-gray-200"><i data-lucide="check"
+                                class="text-secondary w-5 h-5 flex-shrink-0"></i> Phonetic & Translation Search</li>
+                        <li class="flex gap-3 text-gray-200"><i data-lucide="check"
+                                class="text-secondary w-5 h-5 flex-shrink-0"></i> Common Law & Domain Scan</li>
+                        <li class="flex gap-3 text-gray-200"><i data-lucide="check"
+                                class="text-secondary w-5 h-5 flex-shrink-0"></i> Attorney-Ready PDF Report</li>
+                        <li class="flex gap-3 text-gray-200"><i data-lucide="check"
+                                class="text-secondary w-5 h-5 flex-shrink-0"></i> Proprietary Risk Scoring</li>
                     </ul>
-                    <a href="signup.html" class="block w-full text-center bg-secondary hover:bg-secondary-light text-primary font-bold py-3 rounded-lg transition-colors shadow-lg">Select Professional</a>
+                    <a href="signup.html"
+                        class="block w-full text-center bg-secondary hover:bg-secondary-light text-primary font-bold py-3 rounded-lg transition-colors shadow-lg">Select
+                        Professional</a>
                 </div>
 
                 <!-- Enterprise -->
-                <div class="bg-white dark:bg-dark-card rounded-2xl p-8 border border-gray-200 dark:border-white/5 shadow-lg animate-on-scroll fade-up mt-8">
+                <div
+                    class="bg-white dark:bg-dark-card rounded-2xl p-8 border border-gray-200 dark:border-white/5 shadow-lg animate-on-scroll fade-up mt-8">
                     <h3 class="text-2xl font-bold font-heading text-gray-900 dark:text-white mb-2">Enterprise Audit</h3>
                     <p class="text-gray-500 text-sm mb-6">Global screening and litigation checks.</p>
-                    <div class="text-4xl font-bold text-primary dark:text-white mb-6">$1,200 <span class="text-lg text-gray-400 font-medium">/mark</span></div>
+                    <div class="text-4xl font-bold text-primary dark:text-white mb-6">$1,200 <span
+                            class="text-lg text-gray-400 font-medium">/mark</span></div>
                     <ul class="space-y-4 mb-8">
-                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="text-green-500 w-5 h-5 flex-shrink-0"></i> Everything in Pro</li>
-                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="text-green-500 w-5 h-5 flex-shrink-0"></i> WIPO Madrid Global Search</li>
-                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="text-green-500 w-5 h-5 flex-shrink-0"></i> TTAB Litigation History</li>
-                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="text-green-500 w-5 h-5 flex-shrink-0"></i> 1-Hour Consultation Call</li>
+                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check"
+                                class="text-green-500 w-5 h-5 flex-shrink-0"></i> Everything in Pro</li>
+                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check"
+                                class="text-green-500 w-5 h-5 flex-shrink-0"></i> WIPO Madrid Global Search</li>
+                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check"
+                                class="text-green-500 w-5 h-5 flex-shrink-0"></i> TTAB Litigation History</li>
+                        <li class="flex gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check"
+                                class="text-green-500 w-5 h-5 flex-shrink-0"></i> 1-Hour Consultation Call</li>
                     </ul>
-                    <a href="signup.html" class="block w-full text-center bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-primary dark:text-white font-bold py-3 rounded-lg transition-colors">Select Enterprise</a>
+                    <a href="signup.html"
+                        class="block w-full text-center bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-primary dark:text-white font-bold py-3 rounded-lg transition-colors">Select
+                        Enterprise</a>
                 </div>
 
             </div>
@@ -214,42 +249,58 @@
         <section class="py-24 bg-white dark:bg-dark-card">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 animate-on-scroll scale-up">
-                    <h2 class="text-3xl font-bold font-heading text-primary dark:text-white">Detailed Feature Comparison</h2>
+                    <h2 class="text-3xl font-bold font-heading text-primary dark:text-white">Detailed Feature Comparison
+                    </h2>
                 </div>
                 <div class="overflow-x-auto animate-on-scroll fade-up">
                     <table class="w-full text-left border-collapse">
                         <thead>
-                            <tr class="bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white border-y border-gray-200 dark:border-white/10">
+                            <tr
+                                class="bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white border-y border-gray-200 dark:border-white/10">
                                 <th class="p-4 font-bold">Feature</th>
                                 <th class="p-4 font-bold text-center">Basic</th>
-                                <th class="p-4 font-bold text-center bg-primary/5 dark:bg-secondary/10 text-primary dark:text-secondary">Professional</th>
+                                <th
+                                    class="p-4 font-bold text-center bg-primary/5 dark:bg-secondary/10 text-primary dark:text-secondary">
+                                    Professional</th>
                                 <th class="p-4 font-bold text-center">Enterprise</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-200 dark:divide-white/10 text-gray-600 dark:text-gray-300">
                             <tr>
                                 <td class="p-4">USPTO Exact Match</td>
-                                <td class="p-4 text-center"><i data-lucide="check" class="w-5 h-5 mx-auto text-green-500"></i></td>
-                                <td class="p-4 text-center bg-primary/5 dark:bg-secondary/10"><i data-lucide="check" class="w-5 h-5 mx-auto text-green-500"></i></td>
-                                <td class="p-4 text-center"><i data-lucide="check" class="w-5 h-5 mx-auto text-green-500"></i></td>
+                                <td class="p-4 text-center"><i data-lucide="check"
+                                        class="w-5 h-5 mx-auto text-green-500"></i></td>
+                                <td class="p-4 text-center bg-primary/5 dark:bg-secondary/10"><i data-lucide="check"
+                                        class="w-5 h-5 mx-auto text-green-500"></i></td>
+                                <td class="p-4 text-center"><i data-lucide="check"
+                                        class="w-5 h-5 mx-auto text-green-500"></i></td>
                             </tr>
                             <tr>
                                 <td class="p-4">Phonetic Variations</td>
-                                <td class="p-4 text-center"><i data-lucide="minus" class="w-5 h-5 mx-auto text-gray-300 dark:text-gray-600"></i></td>
-                                <td class="p-4 text-center bg-primary/5 dark:bg-secondary/10"><i data-lucide="check" class="w-5 h-5 mx-auto text-green-500"></i></td>
-                                <td class="p-4 text-center"><i data-lucide="check" class="w-5 h-5 mx-auto text-green-500"></i></td>
+                                <td class="p-4 text-center"><i data-lucide="minus"
+                                        class="w-5 h-5 mx-auto text-gray-300 dark:text-gray-600"></i></td>
+                                <td class="p-4 text-center bg-primary/5 dark:bg-secondary/10"><i data-lucide="check"
+                                        class="w-5 h-5 mx-auto text-green-500"></i></td>
+                                <td class="p-4 text-center"><i data-lucide="check"
+                                        class="w-5 h-5 mx-auto text-green-500"></i></td>
                             </tr>
                             <tr>
                                 <td class="p-4">Design Mark Search</td>
-                                <td class="p-4 text-center"><i data-lucide="minus" class="w-5 h-5 mx-auto text-gray-300 dark:text-gray-600"></i></td>
-                                <td class="p-4 text-center bg-primary/5 dark:bg-secondary/10"><i data-lucide="minus" class="w-5 h-5 mx-auto text-gray-300 dark:text-gray-600"></i></td>
-                                <td class="p-4 text-center"><i data-lucide="check" class="w-5 h-5 mx-auto text-green-500"></i></td>
+                                <td class="p-4 text-center"><i data-lucide="minus"
+                                        class="w-5 h-5 mx-auto text-gray-300 dark:text-gray-600"></i></td>
+                                <td class="p-4 text-center bg-primary/5 dark:bg-secondary/10"><i data-lucide="minus"
+                                        class="w-5 h-5 mx-auto text-gray-300 dark:text-gray-600"></i></td>
+                                <td class="p-4 text-center"><i data-lucide="check"
+                                        class="w-5 h-5 mx-auto text-green-500"></i></td>
                             </tr>
                             <tr>
                                 <td class="p-4">Dashboard Access</td>
-                                <td class="p-4 text-center"><i data-lucide="check" class="w-5 h-5 mx-auto text-green-500"></i></td>
-                                <td class="p-4 text-center bg-primary/5 dark:bg-secondary/10"><i data-lucide="check" class="w-5 h-5 mx-auto text-green-500"></i></td>
-                                <td class="p-4 text-center"><i data-lucide="check" class="w-5 h-5 mx-auto text-green-500"></i></td>
+                                <td class="p-4 text-center"><i data-lucide="check"
+                                        class="w-5 h-5 mx-auto text-green-500"></i></td>
+                                <td class="p-4 text-center bg-primary/5 dark:bg-secondary/10"><i data-lucide="check"
+                                        class="w-5 h-5 mx-auto text-green-500"></i></td>
+                                <td class="p-4 text-center"><i data-lucide="check"
+                                        class="w-5 h-5 mx-auto text-green-500"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -258,36 +309,47 @@
         </section>
 
         <!-- 4. Add-ons -->
-        <section class="py-24 bg-gray-50 dark:bg-dark-bg border-t border-gray-200 dark:border-white/5 relative overflow-hidden">
+        <section
+            class="py-24 bg-gray-50 dark:bg-dark-bg border-t border-gray-200 dark:border-white/5 relative overflow-hidden">
             <div class="blob w-96 h-96 bg-primary/10 top-20 left-0"></div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center mb-16 animate-on-scroll scale-up">
-                    <h2 class="text-3xl font-bold font-heading text-primary dark:text-white"><span class="text-gradient-animated">Additional</span> Services</h2>
+                    <h2 class="text-3xl font-bold font-heading text-primary dark:text-white"><span
+                            class="text-gradient-animated">Additional</span> Services</h2>
                     <p class="text-gray-600 dark:text-gray-400 mt-4">Customize your plan with targeted add-ons.</p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-8">
                     <div class="gradient-border-card p-1 animate-on-scroll fade-up">
-                        <div class="bg-white dark:bg-dark-card p-8 rounded-xl h-full shadow-sm flex flex-col items-center text-center">
+                        <div
+                            class="bg-white dark:bg-dark-card p-8 rounded-xl h-full shadow-sm flex flex-col items-center text-center">
                             <i data-lucide="zap" class="w-8 h-8 text-secondary mb-4"></i>
                             <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Expedited 12h Delivery</h4>
-                            <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">Jump the queue for urgent filings.</p>
-                            <div class="text-xl font-bold text-primary dark:text-white mt-auto pt-4">+$150 <span class="text-sm text-gray-400 font-medium">/report</span></div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">Jump the queue for urgent filings.
+                            </p>
+                            <div class="text-xl font-bold text-primary dark:text-white mt-auto pt-4">+$150 <span
+                                    class="text-sm text-gray-400 font-medium">/report</span></div>
                         </div>
                     </div>
                     <div class="gradient-border-card p-1 animate-on-scroll fade-up delay-100">
-                        <div class="bg-white dark:bg-dark-card p-8 rounded-xl h-full shadow-sm flex flex-col items-center text-center">
+                        <div
+                            class="bg-white dark:bg-dark-card p-8 rounded-xl h-full shadow-sm flex flex-col items-center text-center">
                             <i data-lucide="eye" class="w-8 h-8 text-secondary mb-4"></i>
                             <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Monthly Monitoring</h4>
-                            <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">Active tracking of new USPTO applications.</p>
-                            <div class="text-xl font-bold text-primary dark:text-white mt-auto pt-4">+$50 <span class="text-sm text-gray-400 font-medium">/month</span></div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">Active tracking of new USPTO
+                                applications.</p>
+                            <div class="text-xl font-bold text-primary dark:text-white mt-auto pt-4">+$50 <span
+                                    class="text-sm text-gray-400 font-medium">/month</span></div>
                         </div>
                     </div>
                     <div class="gradient-border-card p-1 animate-on-scroll fade-up delay-200">
-                        <div class="bg-white dark:bg-dark-card p-8 rounded-xl h-full shadow-sm flex flex-col items-center text-center">
+                        <div
+                            class="bg-white dark:bg-dark-card p-8 rounded-xl h-full shadow-sm flex flex-col items-center text-center">
                             <i data-lucide="gavel" class="w-8 h-8 text-secondary mb-4"></i>
                             <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Attorney Consultation</h4>
-                            <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">In-depth strategy call with our IP experts.</p>
-                            <div class="text-xl font-bold text-primary dark:text-white mt-auto pt-4">+$200 <span class="text-sm text-gray-400 font-medium">/hour</span></div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">In-depth strategy call with our IP
+                                experts.</p>
+                            <div class="text-xl font-bold text-primary dark:text-white mt-auto pt-4">+$200 <span
+                                    class="text-sm text-gray-400 font-medium">/hour</span></div>
                         </div>
                     </div>
                 </div>
@@ -298,28 +360,67 @@
         <section class="py-24 bg-white dark:bg-dark-card border-t border-gray-200 dark:border-white/5">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 animate-on-scroll scale-up">
-                    <h2 class="text-3xl font-bold font-heading text-primary dark:text-white">Frequently Asked Questions</h2>
+                    <h2 class="text-3xl font-bold font-heading text-primary dark:text-white">Frequently Asked Questions
+                    </h2>
                 </div>
                 <div class="space-y-4 animate-on-scroll fade-up">
-                    <div class="accordion-item bg-white dark:bg-dark-card border border-gray-200 dark:border-white/5 rounded-xl overflow-hidden premium-card">
-                        <button class="w-full px-6 py-4 text-left font-bold text-gray-900 dark:text-white flex justify-between items-center transition-colors">
+                    <div
+                        class="accordion-item bg-white dark:bg-dark-card border border-gray-200 dark:border-white/5 rounded-xl overflow-hidden premium-card">
+                        <button
+                            class="w-full px-6 py-4 text-left font-bold text-gray-900 dark:text-white flex justify-between items-center transition-colors">
                             Do you provide legal advice?
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transition-transform duration-300"></i>
+                            <i data-lucide="chevron-down"
+                                class="w-5 h-5 text-gray-500 transition-transform duration-300"></i>
                         </button>
                         <div class="accordion-content">
                             <div class="px-6 pb-4 pt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                No. We provide comprehensive data analysis and risk scoring, which is designed to be reviewed and utilized by your internal legal counsel or retained attorney to make the final legal determination.
+                                No. We provide comprehensive data analysis and risk scoring, which is designed to be
+                                reviewed and utilized by your internal legal counsel or retained attorney to make the
+                                final legal determination.
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item bg-white dark:bg-dark-card border border-gray-200 dark:border-white/5 rounded-xl overflow-hidden premium-card">
-                        <button class="w-full px-6 py-4 text-left font-bold text-gray-900 dark:text-white flex justify-between items-center transition-colors">
+                    <div
+                        class="accordion-item bg-white dark:bg-dark-card border border-gray-200 dark:border-white/5 rounded-xl overflow-hidden premium-card">
+                        <button
+                            class="w-full px-6 py-4 text-left font-bold text-gray-900 dark:text-white flex justify-between items-center transition-colors">
                             What is included in the Common Law search?
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transition-transform duration-300"></i>
+                            <i data-lucide="chevron-down"
+                                class="w-5 h-5 text-gray-500 transition-transform duration-300"></i>
                         </button>
                         <div class="accordion-content">
                             <div class="px-6 pb-4 pt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                Our Common Law search scans domain name registries, state business registries, social media handles, and prominent industry publications to find unregistered but actively used marks.
+                                Our Common Law search scans domain name registries, state business registries, social
+                                media handles, and prominent industry publications to find unregistered but actively
+                                used marks.
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="accordion-item bg-white dark:bg-dark-card border border-gray-200 dark:border-white/5 rounded-xl overflow-hidden premium-card">
+                        <button
+                            class="w-full px-6 py-4 text-left font-bold text-gray-900 dark:text-white flex justify-between items-center transition-colors">
+                            What jurisdictions do you cover?
+                            <i data-lucide="chevron-down"
+                                class="w-5 h-5 text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-4 pt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                Our platform covers over 180 jurisdictions, including the USPTO, EUIPO, WIPO (International), and national registries across Asia, Latin America, and Africa.
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="accordion-item bg-white dark:bg-dark-card border border-gray-200 dark:border-white/5 rounded-xl overflow-hidden premium-card">
+                        <button
+                            class="w-full px-6 py-4 text-left font-bold text-gray-900 dark:text-white flex justify-between items-center transition-colors">
+                            Do you offer bulk search discounts?
+                            <i data-lucide="chevron-down"
+                                class="w-5 h-5 text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-4 pt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                Yes. Law firms and corporate legal departments processing more than 50 searches per month can request enterprise-tier pricing with significant volume discounts.
                             </div>
                         </div>
                     </div>
@@ -332,7 +433,9 @@
             <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-on-scroll scale-up">
                 <h2 class="text-4xl md:text-5xl font-bold font-heading text-white mb-6">Ready to secure your marks?</h2>
-                <a href="dashboard.html" class="bg-secondary text-primary font-bold px-10 py-5 rounded-xl shadow-lg transition-all text-lg hover:-translate-y-1 inline-block">Create an Account</a>
+                <a href="dashboard.html"
+                    class="bg-secondary text-primary font-bold px-10 py-5 rounded-xl shadow-lg transition-all text-lg hover:-translate-y-1 inline-block">Create
+                    an Account</a>
             </div>
         </section>
 
@@ -356,14 +459,17 @@
                     </p>
                     <div class="flex space-x-4">
                         <a href="#"
-                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary hover:text-primary transition-all shadow-sm"><i
-                                data-lucide="linkedin" class="w-5 h-5"></i></a>
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary hover:text-primary transition-all shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
                         <a href="#"
-                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary hover:text-primary transition-all shadow-sm"><i
-                                data-lucide="twitter" class="w-5 h-5"></i></a>
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary hover:text-primary transition-all shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16H20L8.267 4H4z"/><path d="m4 20 6.768-6.768m2.46-2.46L20 4"/></svg>
+                        </a>
                         <a href="#"
-                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary hover:text-primary transition-all shadow-sm"><i
-                                data-lucide="mail" class="w-5 h-5"></i></a>
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary hover:text-primary transition-all shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </a>
                     </div>
                 </div>
 
@@ -438,21 +544,5 @@
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
