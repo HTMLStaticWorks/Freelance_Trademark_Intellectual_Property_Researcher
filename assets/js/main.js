@@ -137,24 +137,29 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dashboard Sidebar Toggle
     const dashboardMenuBtn = document.getElementById('dashboard-menu-btn');
     const dashboardSidebar = document.getElementById('dashboard-sidebar');
+    const closeSidebarBtn = document.getElementById('close-sidebar-btn');
+    const sidebarBackdrop = document.getElementById('sidebar-backdrop');
     
-    if (dashboardMenuBtn && dashboardSidebar) {
-        dashboardMenuBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            dashboardSidebar.classList.toggle('hidden');
-            dashboardSidebar.classList.toggle('fixed');
-            dashboardSidebar.classList.toggle('inset-y-0');
-            dashboardSidebar.classList.toggle('left-0');
-            dashboardSidebar.classList.toggle('shadow-2xl');
-        });
+    if (dashboardMenuBtn && dashboardSidebar && sidebarBackdrop) {
+        const toggleSidebar = () => {
+            dashboardSidebar.classList.toggle('-translate-x-full');
+            sidebarBackdrop.classList.toggle('hidden');
+            // Prevent scrolling when sidebar is open
+            if (!sidebarBackdrop.classList.contains('hidden')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        };
 
-        // Close sidebar when clicking outside on mobile
-        document.addEventListener('click', (e) => {
-            if (window.innerWidth < 768 && !dashboardSidebar.classList.contains('hidden') && 
-                !dashboardSidebar.contains(e.target) && 
-                !dashboardMenuBtn.contains(e.target)) {
-                dashboardSidebar.classList.add('hidden');
-                dashboardSidebar.classList.remove('fixed', 'inset-y-0', 'left-0', 'shadow-2xl');
+        dashboardMenuBtn.addEventListener('click', toggleSidebar);
+        if (closeSidebarBtn) closeSidebarBtn.addEventListener('click', toggleSidebar);
+        sidebarBackdrop.addEventListener('click', toggleSidebar);
+
+        // Close sidebar on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !sidebarBackdrop.classList.contains('hidden')) {
+                toggleSidebar();
             }
         });
     }
