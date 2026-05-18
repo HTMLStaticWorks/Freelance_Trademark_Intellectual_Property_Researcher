@@ -302,19 +302,19 @@
                         </div>
                         <!-- Screen -->
                         <div
-                            class="bg-[#0f172a] rounded-2xl border border-gray-800 overflow-hidden relative aspect-auto md:aspect-video flex flex-col min-h-[340px] md:min-h-0">
+                            class="bg-[#0f172a] rounded-2xl border border-gray-800 overflow-hidden relative aspect-auto md:aspect-video flex flex-col min-h-[280px] sm:min-h-[340px] md:min-h-0">
                             <!-- Dashboard UI Mockup -->
                             <div
-                                class="h-14 border-b border-gray-800 flex items-center px-6 justify-between bg-gray-900/50">
-                                <div class="flex items-center gap-4 text-white font-bold text-sm">
-                                    <i data-lucide="scale" class="text-secondary w-5 h-5"></i> IPShield Dashboard
+                                class="h-12 sm:h-14 border-b border-gray-800 flex items-center px-4 sm:px-6 justify-between bg-gray-900/50">
+                                <div class="flex items-center gap-2 sm:gap-4 text-white font-bold text-xs sm:text-sm whitespace-nowrap">
+                                    <i data-lucide="scale" class="text-secondary w-4 h-4 sm:w-5 sm:h-5"></i> IPShield Dashboard
                                 </div>
-                                <div class="flex gap-4">
-                                    <div class="w-32 h-7 bg-gray-800 rounded-full border border-gray-700"></div>
-                                    <div class="w-7 h-7 bg-gray-800 rounded-full border border-gray-700"></div>
+                                <div class="flex items-center gap-2 sm:gap-4">
+                                    <div class="w-16 sm:w-32 h-5 sm:h-7 bg-gray-800 rounded-full border border-gray-700"></div>
+                                    <div class="w-5 sm:w-7 h-5 sm:h-7 bg-gray-800 rounded-full border border-gray-700"></div>
                                 </div>
                             </div>
-                            <div class="flex-1 flex p-4 gap-4 overflow-hidden">
+                            <div class="flex-1 flex p-3 sm:p-4 gap-4 overflow-hidden">
                                 <!-- Sidebar -->
                                 <div class="w-32 md:w-48 space-y-3 hidden sm:block">
                                     <div
@@ -340,44 +340,44 @@
                                 </div>
 
                                 <!-- Content -->
-                                <div class="flex-1 space-y-4 min-w-0 flex flex-col justify-between">
+                                <div class="flex-1 space-y-3 sm:space-y-4 min-w-0 flex flex-col justify-between">
                                     <div class="flex gap-2 md:gap-4 overflow-x-auto no-scrollbar">
                                         <div
-                                            class="flex-1 min-w-[140px] h-20 md:h-28 bg-gray-800/30 border border-gray-700 rounded-xl p-3 md:p-4 flex flex-col justify-between group hover:border-secondary/30 transition-colors">
+                                            class="flex-1 min-w-[110px] sm:min-w-[140px] h-20 md:h-28 bg-gray-800/30 border border-gray-700 rounded-xl p-2.5 sm:p-4 flex flex-col justify-between group hover:border-secondary/30 transition-colors">
                                             <div class="flex justify-between items-start">
-                                                <div class="w-2/3 h-2.5 bg-gray-600 rounded"></div>
-                                                <i data-lucide="trending-up" class="w-4 h-4 text-secondary"></i>
+                                                <div class="w-2/3 h-2 bg-gray-600 rounded"></div>
+                                                <i data-lucide="trending-up" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-secondary"></i>
                                             </div>
                                             <div
-                                                class="w-full h-6 md:h-8 bg-gradient-to-r from-secondary to-yellow-500 rounded-lg shadow-lg shadow-secondary/10">
+                                                class="w-full h-4 sm:h-8 bg-gradient-to-r from-secondary to-yellow-500 rounded-md sm:rounded-lg shadow-lg shadow-secondary/10">
                                             </div>
                                         </div>
                                         <div
-                                            class="flex-1 min-w-[140px] h-20 md:h-28 bg-gray-800/30 border border-gray-700 rounded-xl p-3 md:p-4 flex flex-col justify-between group hover:border-red-500/30 transition-colors">
+                                            class="flex-1 min-w-[110px] sm:min-w-[140px] h-20 md:h-28 bg-gray-800/30 border border-gray-700 rounded-xl p-2.5 sm:p-4 flex flex-col justify-between group hover:border-red-500/30 transition-colors">
                                             <div class="flex justify-between items-start">
-                                                <div class="w-2/3 h-2.5 bg-gray-600 rounded"></div>
-                                                <i data-lucide="alert-circle" class="w-4 h-4 text-red-400"></i>
+                                                <div class="w-2/3 h-2 bg-gray-600 rounded"></div>
+                                                <i data-lucide="alert-circle" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-red-400"></i>
                                             </div>
-                                            <div class="flex gap-2">
+                                            <div class="flex gap-1.5 sm:gap-2">
                                                 <div
-                                                    class="w-6 h-6 md:w-10 md:h-10 bg-red-500/20 rounded-lg border border-red-500/30">
+                                                    class="w-5 h-5 sm:w-10 sm:h-10 bg-red-500/20 rounded-md sm:rounded-lg border border-red-500/30">
                                                 </div>
                                                 <div
-                                                    class="w-6 h-6 md:w-10 md:h-10 bg-green-500/20 rounded-lg border border-green-500/30">
+                                                    class="w-5 h-5 sm:w-10 sm:h-10 bg-green-500/20 rounded-md sm:rounded-lg border border-green-500/30">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div
-                                        class="h-32 md:h-48 bg-gray-800/20 border border-gray-700 rounded-xl w-full p-4 md:p-6 relative overflow-hidden flex flex-col justify-between flex-1">
-                                        <div class="flex justify-between items-center mb-4 md:mb-8">
-                                            <div class="w-32 h-3 bg-gray-700 rounded"></div>
-                                            <div class="flex gap-2">
-                                                <div class="w-12 h-6 bg-gray-800 rounded border border-gray-700"></div>
-                                                <div class="w-12 h-6 bg-gray-800 rounded border border-gray-700"></div>
+                                        class="h-28 sm:h-48 bg-gray-800/20 border border-gray-700 rounded-xl w-full p-3 sm:p-6 relative overflow-hidden flex flex-col justify-between flex-1">
+                                        <div class="flex justify-between items-center mb-2 sm:mb-8">
+                                            <div class="w-20 sm:w-32 h-2.5 sm:h-3 bg-gray-700 rounded"></div>
+                                            <div class="flex gap-1.5 sm:gap-2">
+                                                <div class="w-8 sm:w-12 h-5 sm:h-6 bg-gray-800 rounded border border-gray-700"></div>
+                                                <div class="w-8 sm:w-12 h-5 sm:h-6 bg-gray-800 rounded border border-gray-700"></div>
                                             </div>
                                         </div>
-                                        <div class="flex-1 flex items-end gap-2 h-20 md:h-auto">
+                                        <div class="flex-1 flex items-end gap-1.5 sm:gap-2 h-16 sm:h-auto">
                                             <div class="flex-1 bg-gray-700/50 rounded-t h-[30%]"></div>
                                             <div class="flex-1 bg-secondary/50 rounded-t h-[60%]"></div>
                                             <div class="flex-1 bg-gray-700/50 rounded-t h-[40%]"></div>
