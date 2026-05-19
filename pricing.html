@@ -11,7 +11,7 @@
     <script>
         tailwind.config = {
             darkMode: 'class',
-            theme: { extend: { colors: { primary: { DEFAULT: '#14213D', light: '#1f3560', dark: '#0a1120' }, secondary: { DEFAULT: '#FCA311', light: '#fdbd50', dark: '#d68704' }, dark: { bg: '#0f172a', card: '#1e293b', border: '#334155' } }, fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Outfit', 'sans-serif'] } } }
+            theme: { extend: { colors: { primary: { DEFAULT: '#111827', light: '#1f2937', dark: '#030712' }, secondary: { DEFAULT: '#FCA311', light: '#fdbd50', dark: '#d68704' }, dark: { bg: '#0f172a', card: '#1e293b', border: '#334155' } }, fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Outfit', 'sans-serif'] } } }
         }
     </script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -153,23 +153,43 @@
 
     <main class="pt-20">
         <!-- 1. Hero -->
-        <section class="relative bg-[#0a1120] overflow-hidden min-h-[50vh] flex items-center">
+        <section class="relative bg-[#0a1120] overflow-hidden min-h-[60vh] flex items-center">
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
                     alt="Corporate Scalability Background"
                     class="w-full h-full object-cover opacity-20 mix-blend-luminosity">
-                <div class="absolute inset-0 bg-gradient-to-tr from-primary via-primary/95 to-primary/80"></div>
+                <div class="absolute inset-0 bg-gradient-to-tr from-primary via-primary/95 to-primary/80 dark:from-dark-bg dark:via-dark-bg/95 dark:to-dark-bg/80"></div>
                 <div class="absolute inset-0 bg-grid-pattern opacity-20"></div>
+                <!-- Glowing Orbs -->
+                <div class="absolute top-1/4 -left-32 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] mix-blend-screen"></div>
+                <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-blue-500/20 rounded-full blur-[120px] mix-blend-screen"></div>
             </div>
             <div
                 class="absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] mix-blend-screen">
             </div>
             <div
-                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-32 text-center animate-on-scroll scale-up">
-                <h1 class="text-5xl md:text-6xl font-bold font-heading text-white mb-6">Transparent <span
-                        class="text-secondary">Pricing</span></h1>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">Enterprise-grade clearance reports with fixed,
-                    predictable costs for law firms.</p>
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-32 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll fade-up text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-semibold text-xs uppercase tracking-widest mb-6 backdrop-blur-sm">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+                        </span>
+                        Fixed Predictable Costs
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold font-heading text-white mb-6 leading-tight">Transparent <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-yellow-200">Pricing</span></h1>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-xl mx-auto lg:mx-0 mb-12 leading-relaxed font-light">Enterprise-grade clearance reports with fixed,
+                        predictable costs for law firms of all sizes.</p>
+                </div>
+                <div class="animate-on-scroll fade-left delay-200 hidden lg:block">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-secondary/20 to-blue-500/20 opacity-50 blur-2xl rounded-3xl"></div>
+                        <img src="assets/img/hero_pricing.png" alt="IPShield Enterprise Pricing"
+                            class="relative rounded-3xl shadow-2xl border border-white/10 w-full object-cover max-h-[420px]">
+                    </div>
+                </div>
             </div>
         </section>
 
